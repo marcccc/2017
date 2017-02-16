@@ -48,3 +48,31 @@ var sum = function(a, b) {
 };
 sum(1, 2); // 3
 ```
+
+# 模板字符串
+用反引号(**\`**)表示
+```javascript
+var param = {
+  a: 'A',
+  b: 'B'
+};
+var str = `i am ${param.a}, you are ${param.b}.`;
+console.log(str); // 'i am A, you are B.'
+```
+
+# Generator 函数
+异步编程解决方案
+* **function** 关键字与函数之间有一个星号
+* 函数体内部使用**yield**语句，定义不同的内部状态
+```javascript
+function* helloGen() {
+  yield 'hello';
+  yield 'generator';
+  return 'end';
+};
+var gen = helloGen();
+gen.next(); // { value: 'hello', done: false }
+gen.next(); // { value: 'generator', done: false }
+gen.next(); // { value: 'end', done: true }
+gen.next(); // { value: undefined, done: true }
+```
