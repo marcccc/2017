@@ -24,3 +24,27 @@ set.delele(2); // return true; Set { 1, 3, 4, 5 }
 set.has(2); // return false;
 set.clear(); // Set {}
 ```
+# 箭头函数
+定义函数
+```javascript
+var f = v => v;
+// 等价于
+var f = function(v) {
+  return v;
+};
+f(3); // 3
+
+var f = () => 3; // 无参数
+// 等价于
+var f = function() {
+  return 3;
+};
+f(); // 3
+
+var sum = (a, b) => a + b;
+// 等价于
+var sum = function(a, b) {
+  return a + b;
+};
+sum(1, 2); // 3
+```
