@@ -76,3 +76,7 @@ gen.next(); // { value: 'generator', done: false }
 gen.next(); // { value: 'end', done: true }
 gen.next(); // { value: undefined, done: true }
 ```
+
+# Class
+类概念，通过**class**关键字，可以定义类。基本上 ES6 的 class 可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到。
+**constructor** 方法是类的默认方法，通过 new 命令生成对象实例时，自动调用该方法。一个类必须有 **constructor** 方法，如果没有显式定义，一个空的 **construcotr** 方法会被默认添加。
